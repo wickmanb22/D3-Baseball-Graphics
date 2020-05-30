@@ -48,5 +48,5 @@ D3Bat1 <- rbind(D3Bat, D3BatAll)
 D3Pitch1 <- rbind(D3Pitch, D3PitchAll)
 
 #Save as csv files that will be used in the subsequent cleaning R scripts
-#write.csv(D3Bat1,"D3Bat18.csv", row.names = F)
-#write.csv(D3Pitch1,"D3Pitch18.csv", row.names = F)
+#write.csv(D3Bat1,"D3Bat1920.csv", row.names = F)
+#write.csv(D3Pitch1,"D3Pitch1920.csv", row.names = F)
