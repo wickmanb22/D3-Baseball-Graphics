@@ -10,15 +10,12 @@ library(ggplot2)
 library(ggrepel)
 library(stringr)
 
-#import hitting data
-Bat <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3BG2/app2/FinalBatAll1.csv")
-Bat <- Bat %>% filter(Year != 2018)
-  #write.csv(Bat, "FinalBatAll1920.csv", row.names = FALSE)
+#load in hitting data created in the 'Player Statistics' folder
+#Bat <- FinalBatAll1920
 
-#Bring in BatAA
-  BatAA <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3BG2/app2/BatAA.csv")
-  BatAA <- BatAA %>% filter(Year != 2018)
-  Bat$AA = BatAA$AA
+#Bring in database with all american column called 'BatAA'
+ # BatAA <- BatAA
+ # Bat$AA = BatAA$AA
 
 #Hitter Performance
   #Individual Performance
@@ -37,14 +34,12 @@ Bat <- Bat %>% filter(Year != 2018)
         annotate("text", x = rep(.15, 3) , y = c(.53, .73, .93), label = paste("OPS =", c(0.6, 0.8 , 1.0))) +
         annotate("text", x = .27 , y = 1, label = "OPS = 1.2") +
         annotate("text", x = .35 , y = 1.12, label = "OPS = 1.4") +
-        ggtitle("Scatterplot of OBP and SLG Values for Hitters with 25+ At-bats")  +
-        geom_point(data = filter(D3OPS %>% filter(Year == 2020), Player == "Wickman, Brian"), size = 3, shape = 16, color = "#FF0000")
+        ggtitle("Scatterplot of OBP and SLG Values for Hitters with 25+ At-bats")
       OPS
   
-      #Team Performance
-    #Run team productivity section so TeamHit1 will be available
-      #load in IDs
-      D3IDs <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3BG2/DataPrep/D3IDs1920.csv")
+    #Team Hitter Performance
+      #load in D3IDs1920 from 'Rankings' folder
+      #D3IDs <- D3IDs1920
       D3IDs$X <- NULL
       #select relevant subset
       TeamHit <- Bat %>%
@@ -78,26 +73,26 @@ Bat <- Bat %>% filter(Year != 2018)
       TeamHit2$PA <- NULL
       TeamHit2$OBP <- round(TeamHit2$OBP, digits = 3)
       TeamHit2$SLG <- round(TeamHit2$SLG, digits = 3)
-      #write.csv(TeamHit2, "thperf.csv", row.names = FALSE)
+      #save subset for shiny application, thperf = team hitting performance
+        #write.csv(TeamHit2, "thperf.csv", row.names = FALSE)
       
     #THPerf Visual
       thperf <- ggplot(TeamHit2 %>% filter(Year == 2019), aes(OBP, SLG)) + geom_jitter(alpha = 0.4) + 
         xlab("On Base Percentage") + ylab("Slugging Percentage") +
         geom_abline(slope = -1, intercept = seq(0.6, 1.0, by = 0.2)) +
         annotate("text", x = rep(.27, 3) , y = c(.37, .57, .77), label = paste("OPS =", c(0.6, 0.8 , 1.0))) +
-        ggtitle("Scatterplot of OBP and SLG Values for Teams with 200+ At-bats")  +
-        geom_point(data = filter(TeamHit2 %>% filter(Year == 2019), School == "Wash. & Lee"), size = 3, shape = 16, color = "#0000FF")
+        ggtitle("Scatterplot of OBP and SLG Values for Teams with 200+ At-bats")
       thperf
       
 #Hitter Productivity
   #Individual productivity
-    #relevant susbet
+    #create relevant susbet
       D3RC <- Bat %>%
         mutate(PA = AB+HBP+BB+SF+SH) %>%
         filter(RC >= 0) %>%
         select(Player, School, Conference, Year, AA, PA, RC)
       
-    #create subset as csv for app
+    #create subset for app, ihprod = individual hitter productivity
       #write.csv(D3RC, "ihprod.csv", row.names = FALSE)
       
     #calculate productivity percentiles
@@ -111,7 +106,7 @@ Bat <- Bat %>% filter(Year != 2018)
       Q25 <- Q25 %>% rename(PA = Group.1, RC = x)
       Q75 <- Q75 %>% rename(PA = Group.1, RC = x)
       
-      #Write csv files for quantiles
+      #Write csv files for quantiles to be used in shiny app
         #write.csv(Q25, "Q25.csv", row.names = FALSE)
         #write.csv(Q75, "Q75.csv", row.names = FALSE)
         
@@ -126,7 +121,7 @@ Bat <- Bat %>% filter(Year != 2018)
       
   #Team Prod
       
-    #write csv for app
+    #write csv for app, thp = team hitting productivity
       #TeamHit1$OBP <- NULL
       #TeamHit1$SLG <- NULL
       write.csv(TeamHit1, "thprod.csv", row.names = FALSE)
@@ -141,16 +136,13 @@ Bat <- Bat %>% filter(Year != 2018)
 #Pitcher Performance
    #Individual
      #Import pitching statistics
-        Pitch1 <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3BG2/app2/FinalPitchAll1.csv")
-        Pitch1 <- Pitch1 %>% filter(Year != 2018) %>% arrange(desc(IP))
-        Pitch1$AA = 0
-        Pitch2 <- Pitch1[c(1,2,27,3:26)]
-        #write.csv(Pitch2, "PitchAA.csv", row.names = FALSE)
-      #Get AA labeled
-        PitchAA <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3BG2/app2/PitchAA.csv")
+        #Pitch <- FinalPitchAll1920
+      #Import Pitch AA
+        #PitchAA <- PitchAA
+        Pitch1 <- Pitch %>% arrange(desc(IP))
         Pitch1$AA = PitchAA$AA
         
-      #Create Relevant Subset
+      #Create Relevant Subset, ipperf = individual pitching performance
           ipperf <- Pitch1 %>% filter(IP >= 10)
           #write.csv(ipperf, "ipperf.csv", row.names = FALSE)
         
@@ -163,7 +155,7 @@ Bat <- Bat %>% filter(Year != 2018)
           ggtitle("Scatterplot of ERA and WHIP values for pitchers with 10+ IP")
         ipperf
 
-  #Team
+  #Pitching Staff performance
       #Create Relevant subset, D3IDs already loaded in adn colnames revised
         #42 innings chosen because thats the minimum for 5 games? Wait no you'd have to pitch 9 innings to win
         TeamPitch <- Pitch1 %>% mutate(addl_outs = ((IP %% 1)*10),
@@ -191,7 +183,7 @@ Bat <- Bat %>% filter(Year != 2018)
         TeamPitch2$WHIP <- round(TeamPitch2$WHIP, digits = 2)
         #write.csv(TeamPitch2, "tpperf.csv", row.names = FALSE)
         
-        #Actual Graphic (less thasn 1% of data (6 observations) removed due to upper bounds)
+        #Actual Graphic (less thasn 1% of data (6 observations) removed due to upper bounds on WHIP and ERA
         tpperf <- ggplot(TeamPitch1 %>% filter(Year == 2019), aes(ERA, WHIP), color = IP) + geom_jitter(alpha = .3) +
           xlim(0,12.5) + ylim(.75,2.75) +
           xlab("Earned Run Average") + ylab("WHIP") +
