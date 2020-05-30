@@ -1,0 +1,774 @@
+"","school","conference","school_id","year","division","conference_id"
+"1","Averett","USA South",44,2019,3,842
+"2","Berea","USA South",30171,2019,3,842
+"3","Berry","SAA",973,2019,3,30169
+"4","Birmingham-So.","SAA",28593,2019,3,30169
+"5","Brevard","USA South",30094,2019,3,842
+"6","Bridgewater (VA)","ODAC",75,2019,3,903
+"7","Centre","SAA",132,2019,3,30169
+"8","Chris. Newport","CAC",139,2019,3,15810
+"9","Covenant","USA South",30111,2019,3,842
+"10","East. Mennonite","ODAC",203,2019,3,903
+"11","Emory & Henry","ODAC",216,2019,3,903
+"12","Emory","UAA",217,2019,3,1471
+"13","Ferrum","ODAC",225,2019,3,903
+"14","Gallaudet","NEAC",245,2019,3,30071
+"15","Greensboro","USA South",263,2019,3,842
+"16","Guilford","ODAC",1112,2019,3,903
+"17","Hampden-Sydney","ODAC",269,2019,3,903
+"18","Hendrix","SAA",1124,2019,3,30169
+"19","Huntingdon","USA South",1130,2019,3,842
+"20","LaGrange","USA South",1162,2019,3,842
+"21","Lynchburg","ODAC",374,2019,3,903
+"22","Mary Washington","CAC",390,2019,3,15810
+"23","Marymount (VA)","Atlantic East",394,2019,3,30233
+"24","Maryville (TN)","USA South",396,2019,3,842
+"25","Methodist","USA South",412,2019,3,842
+"26","Millsaps","SAA",426,2019,3,30169
+"27","N.C. Wesleyan","USA South",491,2019,3,842
+"28","Oglethorpe","SAA",2713,2019,3,30169
+"29","Pfeiffer","USA South",542,2019,3,842
+"30","Piedmont","USA South",21830,2019,3,842
+"31","Randolph-Macon","ODAC",565,2019,3,903
+"32","Rhodes","SAA",573,2019,3,30169
+"33","Roanoke","ODAC",578,2019,3,903
+"34","Salisbury","CAC",622,2019,3,15810
+"35","Sewanee","SAA",652,2019,3,30169
+"36","Shenandoah","ODAC",637,2019,3,903
+"37","Southern Va.","CAC",30164,2019,3,15810
+"38","St. Mary's (MD)","CAC",611,2019,3,15810
+"39","Va. Wesleyan","ODAC",745,2019,3,903
+"40","Wash. & Lee","ODAC",752,2019,3,903
+"41","Wesley","Atlantic East",763,2019,3,30233
+"42","William Peace","USA South",17094,2019,3,842
+"43","York (PA)","CAC",815,2019,3,15810
+"44","Augustana (IL)","CCIW",40,2019,3,836
+"45","Beloit","Midwest Conference",53,2019,3,23119
+"46","Blackburn","SLIAC",64,2019,3,12974
+"47","Buena Vista","American Rivers",84,2019,3,864
+"48","Carroll (WI)","CCIW",120,2019,3,836
+"49","Carthage","CCIW",121,2019,3,836
+"50","Central (IA)","American Rivers",126,2019,3,864
+"51","Chicago","Midwest Conference",137,2019,3,23119
+"52","Coe","American Rivers",150,2019,3,864
+"53","Cornell College","Midwest Conference",166,2019,3,23119
+"54","Dubuque","American Rivers",192,2019,3,864
+"55","Elmhurst","CCIW",212,2019,3,836
+"56","Eureka","SLIAC",218,2019,3,12974
+"57","Fontbonne","SLIAC",11538,2019,3,12974
+"58","Greenville","SLIAC",1111,2019,3,12974
+"59","Grinnell","Midwest Conference",264,2019,3,23119
+"60","Illinois Col.","Midwest Conference",297,2019,3,23119
+"61","Ill. Wesleyan","CCIW",300,2019,3,836
+"62","Iowa Wesleyan","SLIAC",30173,2019,3,12974
+"63","Knox","Midwest Conference",337,2019,3,23119
+"64","Lawrence","Midwest Conference",348,2019,3,23119
+"65","Loras","American Rivers",364,2019,3,864
+"66","Luther","American Rivers",372,2019,3,864
+"67","MacMurray","SLIAC",377,2019,3,12974
+"68","Millikin","CCIW",424,2019,3,836
+"69","Monmouth (IL)","Midwest Conference",438,2019,3,23119
+"70","Neb. Wesleyan","American Rivers",462,2019,3,864
+"71","North Central (IL)","CCIW",492,2019,3,836
+"72","North Park","CCIW",496,2019,3,836
+"73","Principia","SLIAC",555,2019,3,12974
+"74","Ripon","Midwest Conference",577,2019,3,23119
+"75","Simpson","American Rivers",641,2019,3,864
+"76","Spalding","SLIAC",23260,2019,3,12974
+"77","St. Norbert","Midwest Conference",614,2019,3,23119
+"78","Wartburg","American Rivers",750,2019,3,864
+"79","WashU","UAA",755,2019,3,1471
+"80","Webster","SLIAC",759,2019,3,12974
+"81","Westminster (MO)","SLIAC",1450,2019,3,12974
+"82","Wheaton (IL)","CCIW",778,2019,3,836
+"83","Albright","MAC Commonwealth",16,2019,3,28744
+"84","Alvernia","MAC Commonwealth",938,2019,3,28744
+"85","Arcadia","MAC Commonwealth",966,2019,3,28744
+"86","Cabrini","Atlantic East",88,2019,3,30233
+"87","Cairn","CSAC",1305,2019,3,21062
+"88","Catholic","Landmark",124,2019,3,30101
+"89","Centenary (NJ)","CSAC",12884,2019,3,21062
+"90","Clarks Summit","CSAC",958,2019,3,21062
+"91","Delaware Valley","MAC Freedom",179,2019,3,28745
+"92","DeSales","MAC Freedom",20,2019,3,28745
+"93","Dickinson","Centennial",185,2019,3,9683
+"94","Drew","Landmark",190,2019,3,30101
+"95","Eastern","MAC Freedom",8968,2019,3,28745
+"96","Elizabethtown","Landmark",211,2019,3,30101
+"97","FDU-Florham","MAC Freedom",221,2019,3,28745
+"98","Franklin & Marshall","Centennial",239,2019,3,9683
+"99","Gettysburg","Centennial",258,2019,3,9683
+"100","Gwynedd Mercy","Atlantic East",12399,2019,3,30233
+"101","Haverford","Centennial",276,2019,3,9683
+"102","Hood","MAC Commonwealth",8404,2019,3,28744
+"103","Immaculata","Atlantic East",303,2019,3,30233
+"104","Johns Hopkins","Centennial",322,2019,3,9683
+"105","Juniata","Landmark",325,2019,3,30101
+"106","Kean","NJAC",329,2019,3,891
+"107","Keystone","CSAC",30047,2019,3,21062
+"108","King's (PA)","MAC Freedom",336,2019,3,28745
+"109","Lancaster Bible","NEAC",30085,2019,3,30071
+"110","Lebanon Valley","MAC Commonwealth",351,2019,3,28744
+"111","Manhattanville","Skyline",382,2019,3,13054
+"112","Marywood","Atlantic East",397,2019,3,30233
+"113","McDaniel","Centennial",773,2019,3,9683
+"114","Messiah","MAC Commonwealth",411,2019,3,28744
+"115","Misericordia","MAC Freedom",16142,2019,3,28745
+"116","Montclair St.","NJAC",442,2019,3,891
+"117","Moravian","Landmark",443,2019,3,30101
+"118","Muhlenberg","Centennial",453,2019,3,9683
+"119","Neumann","Atlantic East",1254,2019,3,30233
+"120","New Jersey City","NJAC",319,2019,3,891
+"121","Penn College","NEAC",30190,2019,3,30071
+"122","Penn St.-Abington","NEAC",30114,2019,3,30071
+"123","Penn St.-Berks","NEAC",30044,2019,3,30071
+"124","Penn St. Harrisburg","NEAC",30081,2019,3,30071
+"125","Ramapo","NJAC",564,2019,3,891
+"126","Rowan","NJAC",259,2019,3,891
+"127","Rutgers-Camden","NJAC",588,2019,3,891
+"128","Rutgers-Newark","NJAC",589,2019,3,891
+"129","Scranton","Landmark",633,2019,3,30101
+"130","Stevenson","MAC Commonwealth",21852,2019,3,28744
+"131","Stockton","NJAC",681,2019,3,891
+"132","Susquehanna","Landmark",685,2019,3,30101
+"133","Swarthmore","Centennial",686,2019,3,9683
+"134","TCNJ","NJAC",712,2019,3,891
+"135","Ursinus","Centennial",730,2019,3,9683
+"136","Valley Forge","CSAC",30166,2019,3,21062
+"137","Washington Col.","Centennial",753,2019,3,9683
+"138","Widener","MAC Commonwealth",783,2019,3,28744
+"139","Wilkes","MAC Freedom",784,2019,3,28745
+"140","Wm. Paterson","NJAC",787,2019,3,891
+"141","Wilson","CSAC",12973,2019,3,21062
+"142","Adrian","Michigan Intercol. Ath. Assn.",4,2019,3,873
+"143","Albion","Michigan Intercol. Ath. Assn.",15,2019,3,873
+"144","Alfred St.","AMCC",30170,2019,3,30022
+"145","Allegheny","NCAC",19,2019,3,897
+"146","Alma","Michigan Intercol. Ath. Assn.",21,2019,3,873
+"147","Anderson (IN)","HCAC",939,2019,3,9174
+"148","Baldwin Wallace","OAC",46,2019,3,901
+"149","Bethany (WV)","PAC",59,2019,3,907
+"150","Bluffton","HCAC",987,2019,3,9174
+"151","Calvin","Michigan Intercol. Ath. Assn.",114,2019,3,873
+"152","Capital","OAC",117,2019,3,901
+"153","CWRU","UAA",122,2019,3,1471
+"154","Chatham","PAC",10972,2019,3,907
+"155","D'Youville","AMCC",1059,2019,3,30022
+"156","Defiance","HCAC",1050,2019,3,9174
+"157","Denison","NCAC",182,2019,3,897
+"158","DePauw","NCAC",177,2019,3,897
+"159","Earlham","HCAC",195,2019,3,9174
+"160","Finlandia","WIAC",30032,2019,3,1473
+"161","Franciscan","AMCC",30069,2019,3,30022
+"162","Franklin","HCAC",2694,2019,3,9174
+"163","Geneva","PAC",30084,2019,3,907
+"164","Grove City","PAC",265,2019,3,907
+"165","Hanover","HCAC",1115,2019,3,9174
+"166","Heidelberg","OAC",278,2019,3,901
+"167","Hilbert","AMCC",8398,2019,3,30022
+"168","Hiram","NCAC",281,2019,3,897
+"169","Hope","Michigan Intercol. Ath. Assn.",286,2019,3,873
+"170","John Carroll","OAC",320,2019,3,901
+"171","Kalamazoo","Michigan Intercol. Ath. Assn.",326,2019,3,873
+"172","Kenyon","NCAC",335,2019,3,897
+"173","La Roche","AMCC",1163,2019,3,30022
+"174","Manchester","HCAC",1192,2019,3,9174
+"175","Marietta","OAC",385,2019,3,901
+"176","Medaille","AMCC",23725,2019,3,30022
+"177","Mount Aloysius","AMCC",30036,2019,3,30022
+"178","Mt. St. Joseph","HCAC",8567,2019,3,9174
+"179","Mount Union","OAC",452,2019,3,901
+"180","Muskingum","OAC",455,2019,3,901
+"181","Oberlin","NCAC",515,2019,3,897
+"182","Ohio Northern","OAC",517,2019,3,901
+"183","Ohio Wesleyan","NCAC",520,2019,3,897
+"184","Olivet","Michigan Intercol. Ath. Assn.",525,2019,3,873
+"185","Otterbein","OAC",531,2019,3,901
+"186","Penn St.-Altoona","AMCC",25719,2019,3,30022
+"187","Penn St.-Behrend","AMCC",538,2019,3,30022
+"188","Pitt.-Bradford","AMCC",1315,2019,3,30022
+"189","Pitt.-Greensburg","AMCC",11839,2019,3,30022
+"190","Rose-Hulman","HCAC",585,2019,3,9174
+"191","Saint Vincent","PAC",30064,2019,3,907
+"192","Thiel","PAC",707,2019,3,907
+"193","Transylvania","HCAC",28749,2019,3,9174
+"194","Trine","Michigan Intercol. Ath. Assn.",30037,2019,3,873
+"195","Wabash","NCAC",747,2019,3,897
+"196","Wash. & Jeff.","PAC",751,2019,3,907
+"197","Waynesburg","PAC",1434,2019,3,907
+"198","Westminster (PA)","PAC",1451,2019,3,907
+"199","Wilmington (OH)","OAC",1461,2019,3,901
+"200","Wittenberg","NCAC",806,2019,3,897
+"201","Wooster","NCAC",807,2019,3,897
+"202","Augsburg","MIAC",38,2019,3,882
+"203","Aurora","NACC",42,2019,3,30097
+"204","Benedictine (IL)","NACC",296,2019,3,30097
+"205","Bethany Lutheran","UMAC",30038,2019,3,30115
+"206","Bethel (MN)","MIAC",60,2019,3,882
+"207","Carleton","MIAC",118,2019,3,882
+"208","Concordia Wisconsin","NACC",1036,2019,3,30097
+"209","Concordia Chicago","NACC",160,2019,3,30097
+"210","Concordia-M'head","MIAC",161,2019,3,882
+"211","Crown (MN)","UMAC",30035,2019,3,30115
+"212","Dominican (IL)","NACC",1332,2019,3,30097
+"213","Edgewood","NACC",1066,2019,3,30097
+"214","Gust. Adolphus","MIAC",266,2019,3,882
+"215","Hamline","MIAC",268,2019,3,882
+"216","IIT","NACC",30172,2019,3,30097
+"217","Lakeland","NACC",1164,2019,3,30097
+"218","Macalester","MIAC",376,2019,3,882
+"219","Maranatha Baptist","DIII Independent",1194,2019,3,99020
+"220","Marian (WI)","NACC",1196,2019,3,30097
+"221","Martin Luther","UMAC",8597,2019,3,30115
+"222","MSOE","NACC",20220,2019,3,30097
+"223","Minn.-Morris","UMAC",1226,2019,3,30115
+"224","North Central (MN)","UMAC",30039,2019,3,30115
+"225","Northland","UMAC",1267,2019,3,30115
+"226","Northwestern-St. Paul","UMAC",30031,2019,3,30115
+"227","Rockford","NACC",582,2019,3,30097
+"228","Saint John's (MN)","MIAC",602,2019,3,882
+"229","Saint Mary's (MN)","MIAC",612,2019,3,882
+"230","St. Olaf","MIAC",615,2019,3,882
+"231","St. Scholastica","UMAC",618,2019,3,30115
+"232","St. Thomas (MN)","MIAC",620,2019,3,882
+"233","Wis.-La Crosse","WIAC",795,2019,3,1473
+"234","Wis.-Oshkosh","WIAC",798,2019,3,1473
+"235","Wis.-Platteville","WIAC",800,2019,3,1473
+"236","Wis.-Stevens Point","WIAC",802,2019,3,1473
+"237","Wis.-Stout","WIAC",803,2019,3,1473
+"238","Wis.-Superior","UMAC",804,2019,3,30115
+"239","Wis.-Whitewater","WIAC",805,2019,3,1473
+"240","Wis. Lutheran","NACC",8911,2019,3,30097
+"241","Albertus Magnus","Great Northeast",2798,2019,3,23257
+"242","Amherst","NESCAC",24,2019,3,12817
+"243","Anna Maria","Great Northeast",26,2019,3,23257
+"244","Babson","NEWMAC",45,2019,3,890
+"245","Bates","NESCAC",50,2019,3,12817
+"246","Becker","NECC",26107,2019,3,888
+"247","Bowdoin","NESCAC",69,2019,3,12817
+"248","Brandeis","UAA",73,2019,3,1471
+"249","Bridgewater St.","MASCAC",76,2019,3,870
+"250","Castleton","Little East",123,2019,3,867
+"251","Clark (MA)","NEWMAC",145,2019,3,890
+"252","Coast Guard","NEWMAC",722,2019,3,890
+"253","Colby-Sawyer","Great Northeast",152,2019,3,23257
+"254","Colby","NESCAC",151,2019,3,12817
+"255","Curry","CCC",170,2019,3,839
+"256","Dean","NECC",30219,2019,3,888
+"257","Eastern Conn. St.","Little East",200,2019,3,867
+"258","Eastern Nazarene","NECC",1064,2019,3,888
+"259","Elms","NECC",532,2019,3,888
+"260","Emerson","NEWMAC",214,2019,3,890
+"261","Endicott","CCC",8981,2019,3,839
+"262","Fitchburg St.","MASCAC",227,2019,3,870
+"263","Framingham St.","MASCAC",238,2019,3,870
+"264","Gordon","CCC",1099,2019,3,839
+"265","Hamilton","NESCAC",267,2019,3,12817
+"266","Husson","North Atlantic",1133,2019,3,30026
+"267","JWU (Providence)","Great Northeast",22626,2019,3,23257
+"268","Keene St.","Little East",330,2019,3,867
+"269","Lasell","Great Northeast",8486,2019,3,23257
+"270","Lesley","NECC",24317,2019,3,888
+"271","Me.-Farmington","North Atlantic",379,2019,3,30026
+"272","Me.-Presque Isle","North Atlantic",30040,2019,3,30026
+"273","UMass Boston","Little East",401,2019,3,867
+"274","UMass Dartmouth","Little East",656,2019,3,867
+"275","MCLA","MASCAC",486,2019,3,870
+"276","Mass. Maritime","MASCAC",399,2019,3,870
+"277","Middlebury","NESCAC",420,2019,3,12817
+"278","MIT","NEWMAC",398,2019,3,890
+"279","Mitchell","NECC",30042,2019,3,888
+"280","New England Col.","NECC",467,2019,3,888
+"281","Nichols","CCC",484,2019,3,839
+"282","Norwich","Great Northeast",511,2019,3,23257
+"283","NVU-Lyndon","North Atlantic",30065,2019,3,30026
+"284","Pine Manor","DIII Independent",544,2019,3,99020
+"285","Plymouth St.","Little East",548,2019,3,867
+"286","Rhode Island Col.","Little East",571,2019,3,867
+"287","Rivier","Great Northeast",18422,2019,3,23257
+"288","Roger Williams","CCC",583,2019,3,839
+"289","Salem St.","MASCAC",621,2019,3,870
+"290","Salve Regina","CCC",623,2019,3,839
+"291","Southern Me.","Little East",662,2019,3,867
+"292","Springfield","NEWMAC",673,2019,3,890
+"293","St. Joseph's (ME)","Great Northeast",605,2019,3,23257
+"294","Suffolk","Great Northeast",684,2019,3,23257
+"295","Thomas (ME)","North Atlantic",2758,2019,3,30026
+"296","Trinity (CT)","NESCAC",713,2019,3,12817
+"297","Tufts","NESCAC",717,2019,3,12817
+"298","Wentworth","CCC",762,2019,3,839
+"299","Wesleyan (CT)","NESCAC",764,2019,3,12817
+"300","Western Conn. St.","Little East",770,2019,3,867
+"301","Western New Eng.","CCC",775,2019,3,839
+"302","Westfield St.","MASCAC",777,2019,3,870
+"303","Wheaton (MA)","NEWMAC",779,2019,3,890
+"304","Williams","NESCAC",789,2019,3,12817
+"305","Worcester St.","MASCAC",809,2019,3,870
+"306","WPI","NEWMAC",808,2019,3,890
+"307","Bard","Liberty League",962,2019,3,24197
+"308","Baruch","CUNYAC",58,2019,3,834
+"309","Brockport","SUNYAC",78,2019,3,917
+"310","Cazenovia","NEAC",23624,2019,3,30071
+"311","CCNY","CUNYAC",480,2019,3,834
+"312","Clarkson","Liberty League",146,2019,3,24197
+"313","SUNY Cortland","SUNYAC",168,2019,3,917
+"314","Elmira","Empire 8",213,2019,3,863
+"315","Farmingdale St.","Skyline",27892,2019,3,13054
+"316","Fredonia","SUNYAC",242,2019,3,917
+"317","Houghton","Empire 8",30160,2019,3,863
+"318","Ithaca","Liberty League",313,2019,3,24197
+"319","John Jay","CUNYAC",321,2019,3,834
+"320","Keuka","NEAC",1159,2019,3,30071
+"321","Lehman","CUNYAC",279,2019,3,834
+"322","Merchant Marine","Skyline",724,2019,3,13054
+"323","Mt. St. Mary (NY)","Skyline",1468,2019,3,13054
+"324","CMSV","Skyline",451,2019,3,13054
+"325","NYU","UAA",479,2019,3,1471
+"326","Oswego St.","SUNYAC",530,2019,3,917
+"327","Plattsburgh St.","SUNYAC",547,2019,3,917
+"328","RIT","Liberty League",580,2019,3,24197
+"329","Rochester (NY)","Liberty League",581,2019,3,24197
+"330","Rensselaer","Liberty League",570,2019,3,24197
+"331","Skidmore","Liberty League",642,2019,3,24197
+"332","St. John Fisher","Empire 8",601,2019,3,863
+"333","St. Joseph's (Brkln)","Skyline",30072,2019,3,13054
+"334","St. Joseph's (L.I.)","Skyline",1340,2019,3,13054
+"335","St. Lawrence","Liberty League",607,2019,3,24197
+"336","Stevens","MAC Freedom",679,2019,3,28745
+"337","SUNY New Paltz","SUNYAC",475,2019,3,917
+"338","SUNY Oneonta","SUNYAC",526,2019,3,917
+"339","SUNY Poly","NEAC",9500,2019,3,30071
+"340","SUNY Canton","North Atlantic",30165,2019,3,30026
+"341","Cobleskill St.","NEAC",30083,2019,3,30071
+"342","SUNY Maritime","Skyline",478,2019,3,13054
+"343","Old Westbury","Skyline",524,2019,3,13054
+"344","Purchase","Skyline",30029,2019,3,13054
+"345","Union (NY)","Liberty League",727,2019,3,24197
+"346","Utica","Empire 8",733,2019,3,863
+"347","Vassar","Liberty League",737,2019,3,24197
+"348","Wells","NEAC",761,2019,3,30071
+"349","Yeshiva","Skyline",814,2019,3,13054
+"350","Austin","SCAC",953,2019,3,835
+"351","Belhaven","ASC",30197,2019,3,14825
+"352","Cal Lutheran","SCIAC",105,2019,3,910
+"353","Caltech","SCIAC",89,2019,3,910
+"354","Centenary (LA)","SCAC",125,2019,3,835
+"355","Chapman","SCIAC",134,2019,3,910
+"356","Claremont-M-S","SCIAC",142,2019,3,910
+"357","Concordia (TX)","ASC",24400,2019,3,14825
+"358","East Tex. Baptist","ASC",1062,2019,3,14825
+"359","George Fox","NWC",1094,2019,3,25300
+"360","Hardin-Simmons","ASC",271,2019,3,14825
+"361","Howard Payne","ASC",2741,2019,3,14825
+"362","La Verne","SCIAC",341,2019,3,910
+"363","LeTourneau","ASC",8490,2019,3,14825
+"364","Lewis & Clark","NWC",22235,2019,3,25300
+"365","Linfield","NWC",1179,2019,3,25300
+"366","Louisiana Col.","ASC",1182,2019,3,14825
+"367","Mary Hardin-Baylor","ASC",1203,2019,3,14825
+"368","McMurry","ASC",8530,2019,3,14825
+"369","Occidental","SCIAC",516,2019,3,910
+"370","Pacific Lutheran","NWC",1297,2019,3,25300
+"371","Pacific (OR)","NWC",2751,2019,3,25300
+"372","Pomona-Pitzer","SCIAC",549,2019,3,910
+"373","Puget Sound","NWC",557,2019,3,25300
+"374","Redlands","SCIAC",567,2019,3,910
+"375","Schreiner","SCAC",1355,2019,3,835
+"376","Southwestern (TX)","SCAC",8746,2019,3,835
+"377","Sul Ross St.","ASC",1390,2019,3,14825
+"378","Texas Lutheran","SCAC",1400,2019,3,835
+"379","Texas-Dallas","ASC",23121,2019,3,14825
+"380","Trinity (TX)","SCAC",715,2019,3,835
+"381","Dallas","SCAC",1044,2019,3,835
+"382","Ozarks (AR)","ASC",23008,2019,3,14825
+"383","Whitman","NWC",780,2019,3,25300
+"384","Whittier","SCIAC",781,2019,3,910
+"385","Whitworth","NWC",1454,2019,3,25300
+"386","Willamette","NWC",785,2019,3,25300
+"387","Averett","USA South",44,2020,3,842
+"388","Berea","USA South",30171,2020,3,842
+"389","Berry","SAA",973,2020,3,30169
+"390","Birmingham-So.","SAA",28593,2020,3,30169
+"391","Brevard","USA South",30094,2020,3,842
+"392","Bridgewater (VA)","ODAC",75,2020,3,903
+"393","Centre","SAA",132,2020,3,30169
+"394","Chris. Newport","CAC",139,2020,3,15810
+"395","Covenant","USA South",30111,2020,3,842
+"396","East. Mennonite","ODAC",203,2020,3,903
+"397","Emory & Henry","ODAC",216,2020,3,903
+"398","Emory","UAA",217,2020,3,1471
+"399","Ferrum","ODAC",225,2020,3,903
+"400","Gallaudet","NEAC",245,2020,3,30071
+"401","Greensboro","USA South",263,2020,3,842
+"402","Guilford","ODAC",1112,2020,3,903
+"403","Hampden-Sydney","ODAC",269,2020,3,903
+"404","Hendrix","SAA",1124,2020,3,30169
+"405","Huntingdon","USA South",1130,2020,3,842
+"406","LaGrange","USA South",1162,2020,3,842
+"407","Lynchburg","ODAC",374,2020,3,903
+"408","Mary Washington","CAC",390,2020,3,15810
+"409","Marymount (VA)","Atlantic East",394,2020,3,30233
+"410","Maryville (TN)","USA South",396,2020,3,842
+"411","Methodist","USA South",412,2020,3,842
+"412","Millsaps","SAA",426,2020,3,30169
+"413","N.C. Wesleyan","USA South",491,2020,3,842
+"414","Oglethorpe","SAA",2713,2020,3,30169
+"415","Pfeiffer","USA South",542,2020,3,842
+"416","Piedmont","USA South",21830,2020,3,842
+"417","Randolph-Macon","ODAC",565,2020,3,903
+"418","Rhodes","SAA",573,2020,3,30169
+"419","Roanoke","ODAC",578,2020,3,903
+"420","Salisbury","CAC",622,2020,3,15810
+"421","Sewanee","SAA",652,2020,3,30169
+"422","Shenandoah","ODAC",637,2020,3,903
+"423","Southern Va.","CAC",30164,2020,3,15810
+"424","St. Mary's (MD)","CAC",611,2020,3,15810
+"425","Va. Wesleyan","ODAC",745,2020,3,903
+"426","Wash. & Lee","ODAC",752,2020,3,903
+"427","Wesley","Atlantic East",763,2020,3,30233
+"428","William Peace","USA South",17094,2020,3,842
+"429","York (PA)","CAC",815,2020,3,15810
+"430","Augustana (IL)","CCIW",40,2020,3,836
+"431","Beloit","Midwest Conference",53,2020,3,23119
+"432","Blackburn","SLIAC",64,2020,3,12974
+"433","Buena Vista","American Rivers",84,2020,3,864
+"434","Carroll (WI)","CCIW",120,2020,3,836
+"435","Carthage","CCIW",121,2020,3,836
+"436","Central (IA)","American Rivers",126,2020,3,864
+"437","Chicago","Midwest Conference",137,2020,3,23119
+"438","Coe","American Rivers",150,2020,3,864
+"439","Cornell College","Midwest Conference",166,2020,3,23119
+"440","Dubuque","American Rivers",192,2020,3,864
+"441","Elmhurst","CCIW",212,2020,3,836
+"442","Eureka","SLIAC",218,2020,3,12974
+"443","Fontbonne","SLIAC",11538,2020,3,12974
+"444","Greenville","SLIAC",1111,2020,3,12974
+"445","Grinnell","Midwest Conference",264,2020,3,23119
+"446","Illinois Col.","Midwest Conference",297,2020,3,23119
+"447","Ill. Wesleyan","CCIW",300,2020,3,836
+"448","Iowa Wesleyan","SLIAC",30173,2020,3,12974
+"449","Knox","Midwest Conference",337,2020,3,23119
+"450","Lawrence","Midwest Conference",348,2020,3,23119
+"451","Loras","American Rivers",364,2020,3,864
+"452","Luther","American Rivers",372,2020,3,864
+"453","MacMurray","SLIAC",377,2020,3,12974
+"454","Millikin","CCIW",424,2020,3,836
+"455","Monmouth (IL)","Midwest Conference",438,2020,3,23119
+"456","Neb. Wesleyan","American Rivers",462,2020,3,864
+"457","North Central (IL)","CCIW",492,2020,3,836
+"458","North Park","CCIW",496,2020,3,836
+"459","Principia","SLIAC",555,2020,3,12974
+"460","Ripon","Midwest Conference",577,2020,3,23119
+"461","Simpson","American Rivers",641,2020,3,864
+"462","Spalding","SLIAC",23260,2020,3,12974
+"463","St. Norbert","Midwest Conference",614,2020,3,23119
+"464","Wartburg","American Rivers",750,2020,3,864
+"465","WashU","UAA",755,2020,3,1471
+"466","Webster","SLIAC",759,2020,3,12974
+"467","Westminster (MO)","SLIAC",1450,2020,3,12974
+"468","Wheaton (IL)","CCIW",778,2020,3,836
+"469","Albright","MAC Commonwealth",16,2020,3,28744
+"470","Alvernia","MAC Commonwealth",938,2020,3,28744
+"471","Arcadia","MAC Commonwealth",966,2020,3,28744
+"472","Cabrini","Atlantic East",88,2020,3,30233
+"473","Cairn","CSAC",1305,2020,3,21062
+"474","Catholic","Landmark",124,2020,3,30101
+"475","Centenary (NJ)","CSAC",12884,2020,3,21062
+"476","Clarks Summit","CSAC",958,2020,3,21062
+"477","Delaware Valley","MAC Freedom",179,2020,3,28745
+"478","DeSales","MAC Freedom",20,2020,3,28745
+"479","Dickinson","Centennial",185,2020,3,9683
+"480","Drew","Landmark",190,2020,3,30101
+"481","Eastern","MAC Freedom",8968,2020,3,28745
+"482","Elizabethtown","Landmark",211,2020,3,30101
+"483","FDU-Florham","MAC Freedom",221,2020,3,28745
+"484","Franklin & Marshall","Centennial",239,2020,3,9683
+"485","Gettysburg","Centennial",258,2020,3,9683
+"486","Gwynedd Mercy","Atlantic East",12399,2020,3,30233
+"487","Haverford","Centennial",276,2020,3,9683
+"488","Hood","MAC Commonwealth",8404,2020,3,28744
+"489","Immaculata","Atlantic East",303,2020,3,30233
+"490","Johns Hopkins","Centennial",322,2020,3,9683
+"491","Juniata","Landmark",325,2020,3,30101
+"492","Kean","NJAC",329,2020,3,891
+"493","Keystone","CSAC",30047,2020,3,21062
+"494","King's (PA)","MAC Freedom",336,2020,3,28745
+"495","Lancaster Bible","NEAC",30085,2020,3,30071
+"496","Lebanon Valley","MAC Commonwealth",351,2020,3,28744
+"497","Manhattanville","Skyline",382,2020,3,13054
+"498","Marywood","Atlantic East",397,2020,3,30233
+"499","McDaniel","Centennial",773,2020,3,9683
+"500","Messiah","MAC Commonwealth",411,2020,3,28744
+"501","Misericordia","MAC Freedom",16142,2020,3,28745
+"502","Montclair St.","NJAC",442,2020,3,891
+"503","Moravian","Landmark",443,2020,3,30101
+"504","Muhlenberg","Centennial",453,2020,3,9683
+"505","Neumann","Atlantic East",1254,2020,3,30233
+"506","New Jersey City","NJAC",319,2020,3,891
+"507","Penn College","NEAC",30190,2020,3,30071
+"508","Penn St.-Abington","NEAC",30114,2020,3,30071
+"509","Penn St.-Berks","NEAC",30044,2020,3,30071
+"510","Penn St. Harrisburg","NEAC",30081,2020,3,30071
+"511","Ramapo","NJAC",564,2020,3,891
+"512","Rowan","NJAC",259,2020,3,891
+"513","Rutgers-Camden","NJAC",588,2020,3,891
+"514","Rutgers-Newark","NJAC",589,2020,3,891
+"515","Scranton","Landmark",633,2020,3,30101
+"516","Stevenson","MAC Commonwealth",21852,2020,3,28744
+"517","Stockton","NJAC",681,2020,3,891
+"518","Susquehanna","Landmark",685,2020,3,30101
+"519","Swarthmore","Centennial",686,2020,3,9683
+"520","TCNJ","NJAC",712,2020,3,891
+"521","Ursinus","Centennial",730,2020,3,9683
+"522","Valley Forge","CSAC",30166,2020,3,21062
+"523","Washington Col.","Centennial",753,2020,3,9683
+"524","Widener","MAC Commonwealth",783,2020,3,28744
+"525","Wilkes","MAC Freedom",784,2020,3,28745
+"526","Wm. Paterson","NJAC",787,2020,3,891
+"527","Wilson","CSAC",12973,2020,3,21062
+"528","Adrian","Michigan Intercol. Ath. Assn.",4,2020,3,873
+"529","Albion","Michigan Intercol. Ath. Assn.",15,2020,3,873
+"530","Alfred St.","AMCC",30170,2020,3,30022
+"531","Allegheny","NCAC",19,2020,3,897
+"532","Alma","Michigan Intercol. Ath. Assn.",21,2020,3,873
+"533","Anderson (IN)","HCAC",939,2020,3,9174
+"534","Baldwin Wallace","OAC",46,2020,3,901
+"535","Bethany (WV)","PAC",59,2020,3,907
+"536","Bluffton","HCAC",987,2020,3,9174
+"537","Calvin","Michigan Intercol. Ath. Assn.",114,2020,3,873
+"538","Capital","OAC",117,2020,3,901
+"539","CWRU","UAA",122,2020,3,1471
+"540","Chatham","PAC",10972,2020,3,907
+"541","D'Youville","AMCC",1059,2020,3,30022
+"542","Defiance","HCAC",1050,2020,3,9174
+"543","Denison","NCAC",182,2020,3,897
+"544","DePauw","NCAC",177,2020,3,897
+"545","Earlham","HCAC",195,2020,3,9174
+"546","Finlandia","WIAC",30032,2020,3,1473
+"547","Franciscan","AMCC",30069,2020,3,30022
+"548","Franklin","HCAC",2694,2020,3,9174
+"549","Geneva","PAC",30084,2020,3,907
+"550","Grove City","PAC",265,2020,3,907
+"551","Hanover","HCAC",1115,2020,3,9174
+"552","Heidelberg","OAC",278,2020,3,901
+"553","Hilbert","AMCC",8398,2020,3,30022
+"554","Hiram","NCAC",281,2020,3,897
+"555","Hope","Michigan Intercol. Ath. Assn.",286,2020,3,873
+"556","John Carroll","OAC",320,2020,3,901
+"557","Kalamazoo","Michigan Intercol. Ath. Assn.",326,2020,3,873
+"558","Kenyon","NCAC",335,2020,3,897
+"559","La Roche","AMCC",1163,2020,3,30022
+"560","Manchester","HCAC",1192,2020,3,9174
+"561","Marietta","OAC",385,2020,3,901
+"562","Medaille","AMCC",23725,2020,3,30022
+"563","Mount Aloysius","AMCC",30036,2020,3,30022
+"564","Mt. St. Joseph","HCAC",8567,2020,3,9174
+"565","Mount Union","OAC",452,2020,3,901
+"566","Muskingum","OAC",455,2020,3,901
+"567","Oberlin","NCAC",515,2020,3,897
+"568","Ohio Northern","OAC",517,2020,3,901
+"569","Ohio Wesleyan","NCAC",520,2020,3,897
+"570","Olivet","Michigan Intercol. Ath. Assn.",525,2020,3,873
+"571","Otterbein","OAC",531,2020,3,901
+"572","Penn St.-Altoona","AMCC",25719,2020,3,30022
+"573","Penn St.-Behrend","AMCC",538,2020,3,30022
+"574","Pitt.-Bradford","AMCC",1315,2020,3,30022
+"575","Pitt.-Greensburg","AMCC",11839,2020,3,30022
+"576","Rose-Hulman","HCAC",585,2020,3,9174
+"577","Saint Vincent","PAC",30064,2020,3,907
+"578","Thiel","PAC",707,2020,3,907
+"579","Transylvania","HCAC",28749,2020,3,9174
+"580","Trine","Michigan Intercol. Ath. Assn.",30037,2020,3,873
+"581","Wabash","NCAC",747,2020,3,897
+"582","Wash. & Jeff.","PAC",751,2020,3,907
+"583","Waynesburg","PAC",1434,2020,3,907
+"584","Westminster (PA)","PAC",1451,2020,3,907
+"585","Wilmington (OH)","OAC",1461,2020,3,901
+"586","Wittenberg","NCAC",806,2020,3,897
+"587","Wooster","NCAC",807,2020,3,897
+"588","Augsburg","MIAC",38,2020,3,882
+"589","Aurora","NACC",42,2020,3,30097
+"590","Benedictine (IL)","NACC",296,2020,3,30097
+"591","Bethany Lutheran","UMAC",30038,2020,3,30115
+"592","Bethel (MN)","MIAC",60,2020,3,882
+"593","Carleton","MIAC",118,2020,3,882
+"594","Concordia Wisconsin","NACC",1036,2020,3,30097
+"595","Concordia Chicago","NACC",160,2020,3,30097
+"596","Concordia-M'head","MIAC",161,2020,3,882
+"597","Crown (MN)","UMAC",30035,2020,3,30115
+"598","Dominican (IL)","NACC",1332,2020,3,30097
+"599","Edgewood","NACC",1066,2020,3,30097
+"600","Gust. Adolphus","MIAC",266,2020,3,882
+"601","Hamline","MIAC",268,2020,3,882
+"602","IIT","NACC",30172,2020,3,30097
+"603","Lakeland","NACC",1164,2020,3,30097
+"604","Macalester","MIAC",376,2020,3,882
+"605","Maranatha Baptist","DIII Independent",1194,2020,3,99020
+"606","Marian (WI)","NACC",1196,2020,3,30097
+"607","Martin Luther","UMAC",8597,2020,3,30115
+"608","MSOE","NACC",20220,2020,3,30097
+"609","Minn.-Morris","UMAC",1226,2020,3,30115
+"610","North Central (MN)","UMAC",30039,2020,3,30115
+"611","Northland","UMAC",1267,2020,3,30115
+"612","Northwestern-St. Paul","UMAC",30031,2020,3,30115
+"613","Rockford","NACC",582,2020,3,30097
+"614","Saint John's (MN)","MIAC",602,2020,3,882
+"615","Saint Mary's (MN)","MIAC",612,2020,3,882
+"616","St. Olaf","MIAC",615,2020,3,882
+"617","St. Scholastica","UMAC",618,2020,3,30115
+"618","St. Thomas (MN)","MIAC",620,2020,3,882
+"619","Wis.-La Crosse","WIAC",795,2020,3,1473
+"620","Wis.-Oshkosh","WIAC",798,2020,3,1473
+"621","Wis.-Platteville","WIAC",800,2020,3,1473
+"622","Wis.-Stevens Point","WIAC",802,2020,3,1473
+"623","Wis.-Stout","WIAC",803,2020,3,1473
+"624","Wis.-Superior","UMAC",804,2020,3,30115
+"625","Wis.-Whitewater","WIAC",805,2020,3,1473
+"626","Wis. Lutheran","NACC",8911,2020,3,30097
+"627","Albertus Magnus","Great Northeast",2798,2020,3,23257
+"628","Amherst","NESCAC",24,2020,3,12817
+"629","Anna Maria","Great Northeast",26,2020,3,23257
+"630","Babson","NEWMAC",45,2020,3,890
+"631","Bates","NESCAC",50,2020,3,12817
+"632","Becker","NECC",26107,2020,3,888
+"633","Bowdoin","NESCAC",69,2020,3,12817
+"634","Brandeis","UAA",73,2020,3,1471
+"635","Bridgewater St.","MASCAC",76,2020,3,870
+"636","Castleton","Little East",123,2020,3,867
+"637","Clark (MA)","NEWMAC",145,2020,3,890
+"638","Coast Guard","NEWMAC",722,2020,3,890
+"639","Colby-Sawyer","Great Northeast",152,2020,3,23257
+"640","Colby","NESCAC",151,2020,3,12817
+"641","Curry","CCC",170,2020,3,839
+"642","Dean","NECC",30219,2020,3,888
+"643","Eastern Conn. St.","Little East",200,2020,3,867
+"644","Eastern Nazarene","NECC",1064,2020,3,888
+"645","Elms","NECC",532,2020,3,888
+"646","Emerson","NEWMAC",214,2020,3,890
+"647","Endicott","CCC",8981,2020,3,839
+"648","Fitchburg St.","MASCAC",227,2020,3,870
+"649","Framingham St.","MASCAC",238,2020,3,870
+"650","Gordon","CCC",1099,2020,3,839
+"651","Hamilton","NESCAC",267,2020,3,12817
+"652","Husson","North Atlantic",1133,2020,3,30026
+"653","JWU (Providence)","Great Northeast",22626,2020,3,23257
+"654","Keene St.","Little East",330,2020,3,867
+"655","Lasell","Great Northeast",8486,2020,3,23257
+"656","Lesley","NECC",24317,2020,3,888
+"657","Me.-Farmington","North Atlantic",379,2020,3,30026
+"658","Me.-Presque Isle","North Atlantic",30040,2020,3,30026
+"659","UMass Boston","Little East",401,2020,3,867
+"660","UMass Dartmouth","Little East",656,2020,3,867
+"661","MCLA","MASCAC",486,2020,3,870
+"662","Mass. Maritime","MASCAC",399,2020,3,870
+"663","Middlebury","NESCAC",420,2020,3,12817
+"664","MIT","NEWMAC",398,2020,3,890
+"665","Mitchell","NECC",30042,2020,3,888
+"666","New England Col.","NECC",467,2020,3,888
+"667","Nichols","CCC",484,2020,3,839
+"668","Norwich","Great Northeast",511,2020,3,23257
+"669","NVU-Lyndon","North Atlantic",30065,2020,3,30026
+"670","Pine Manor","DIII Independent",544,2020,3,99020
+"671","Plymouth St.","Little East",548,2020,3,867
+"672","Rhode Island Col.","Little East",571,2020,3,867
+"673","Rivier","Great Northeast",18422,2020,3,23257
+"674","Roger Williams","CCC",583,2020,3,839
+"675","Salem St.","MASCAC",621,2020,3,870
+"676","Salve Regina","CCC",623,2020,3,839
+"677","Southern Me.","Little East",662,2020,3,867
+"678","Springfield","NEWMAC",673,2020,3,890
+"679","St. Joseph's (ME)","Great Northeast",605,2020,3,23257
+"680","Suffolk","Great Northeast",684,2020,3,23257
+"681","Thomas (ME)","North Atlantic",2758,2020,3,30026
+"682","Trinity (CT)","NESCAC",713,2020,3,12817
+"683","Tufts","NESCAC",717,2020,3,12817
+"684","Wentworth","CCC",762,2020,3,839
+"685","Wesleyan (CT)","NESCAC",764,2020,3,12817
+"686","Western Conn. St.","Little East",770,2020,3,867
+"687","Western New Eng.","CCC",775,2020,3,839
+"688","Westfield St.","MASCAC",777,2020,3,870
+"689","Wheaton (MA)","NEWMAC",779,2020,3,890
+"690","Williams","NESCAC",789,2020,3,12817
+"691","Worcester St.","MASCAC",809,2020,3,870
+"692","WPI","NEWMAC",808,2020,3,890
+"693","Bard","Liberty League",962,2020,3,24197
+"694","Baruch","CUNYAC",58,2020,3,834
+"695","Brockport","SUNYAC",78,2020,3,917
+"696","Cazenovia","NEAC",23624,2020,3,30071
+"697","CCNY","CUNYAC",480,2020,3,834
+"698","Clarkson","Liberty League",146,2020,3,24197
+"699","SUNY Cortland","SUNYAC",168,2020,3,917
+"700","Elmira","Empire 8",213,2020,3,863
+"701","Farmingdale St.","Skyline",27892,2020,3,13054
+"702","Fredonia","SUNYAC",242,2020,3,917
+"703","Houghton","Empire 8",30160,2020,3,863
+"704","Ithaca","Liberty League",313,2020,3,24197
+"705","John Jay","CUNYAC",321,2020,3,834
+"706","Keuka","NEAC",1159,2020,3,30071
+"707","Lehman","CUNYAC",279,2020,3,834
+"708","Merchant Marine","Skyline",724,2020,3,13054
+"709","Mt. St. Mary (NY)","Skyline",1468,2020,3,13054
+"710","CMSV","Skyline",451,2020,3,13054
+"711","NYU","UAA",479,2020,3,1471
+"712","Oswego St.","SUNYAC",530,2020,3,917
+"713","Plattsburgh St.","SUNYAC",547,2020,3,917
+"714","RIT","Liberty League",580,2020,3,24197
+"715","Rochester (NY)","Liberty League",581,2020,3,24197
+"716","Rensselaer","Liberty League",570,2020,3,24197
+"717","Skidmore","Liberty League",642,2020,3,24197
+"718","St. John Fisher","Empire 8",601,2020,3,863
+"719","St. Joseph's (Brkln)","Skyline",30072,2020,3,13054
+"720","St. Joseph's (L.I.)","Skyline",1340,2020,3,13054
+"721","St. Lawrence","Liberty League",607,2020,3,24197
+"722","Stevens","MAC Freedom",679,2020,3,28745
+"723","SUNY New Paltz","SUNYAC",475,2020,3,917
+"724","SUNY Oneonta","SUNYAC",526,2020,3,917
+"725","SUNY Poly","NEAC",9500,2020,3,30071
+"726","SUNY Canton","North Atlantic",30165,2020,3,30026
+"727","Cobleskill St.","NEAC",30083,2020,3,30071
+"728","SUNY Maritime","Skyline",478,2020,3,13054
+"729","Old Westbury","Skyline",524,2020,3,13054
+"730","Purchase","Skyline",30029,2020,3,13054
+"731","Union (NY)","Liberty League",727,2020,3,24197
+"732","Utica","Empire 8",733,2020,3,863
+"733","Vassar","Liberty League",737,2020,3,24197
+"734","Wells","NEAC",761,2020,3,30071
+"735","Yeshiva","Skyline",814,2020,3,13054
+"736","Austin","SCAC",953,2020,3,835
+"737","Belhaven","ASC",30197,2020,3,14825
+"738","Cal Lutheran","SCIAC",105,2020,3,910
+"739","Caltech","SCIAC",89,2020,3,910
+"740","Centenary (LA)","SCAC",125,2020,3,835
+"741","Chapman","SCIAC",134,2020,3,910
+"742","Claremont-M-S","SCIAC",142,2020,3,910
+"743","Concordia (TX)","ASC",24400,2020,3,14825
+"744","East Tex. Baptist","ASC",1062,2020,3,14825
+"745","George Fox","NWC",1094,2020,3,25300
+"746","Hardin-Simmons","ASC",271,2020,3,14825
+"747","Howard Payne","ASC",2741,2020,3,14825
+"748","La Verne","SCIAC",341,2020,3,910
+"749","LeTourneau","ASC",8490,2020,3,14825
+"750","Lewis & Clark","NWC",22235,2020,3,25300
+"751","Linfield","NWC",1179,2020,3,25300
+"752","Louisiana Col.","ASC",1182,2020,3,14825
+"753","Mary Hardin-Baylor","ASC",1203,2020,3,14825
+"754","McMurry","ASC",8530,2020,3,14825
+"755","Occidental","SCIAC",516,2020,3,910
+"756","Pacific Lutheran","NWC",1297,2020,3,25300
+"757","Pacific (OR)","NWC",2751,2020,3,25300
+"758","Pomona-Pitzer","SCIAC",549,2020,3,910
+"759","Puget Sound","NWC",557,2020,3,25300
+"760","Redlands","SCIAC",567,2020,3,910
+"761","Schreiner","SCAC",1355,2020,3,835
+"762","Southwestern (TX)","SCAC",8746,2020,3,835
+"763","Sul Ross St.","ASC",1390,2020,3,14825
+"764","Texas Lutheran","SCAC",1400,2020,3,835
+"765","Texas-Dallas","ASC",23121,2020,3,14825
+"766","Trinity (TX)","SCAC",715,2020,3,835
+"767","Dallas","SCAC",1044,2020,3,835
+"768","Ozarks (AR)","ASC",23008,2020,3,14825
+"769","Whitman","NWC",780,2020,3,25300
+"770","Whittier","SCIAC",781,2020,3,910
+"771","Whitworth","NWC",1454,2020,3,25300
+"772","Willamette","NWC",785,2020,3,25300
+"773","St. Elizabeth","CSAC",9684,2020,3,21062
