@@ -1,15 +1,16 @@
 ## Graphics
+## This document:
+## Creates individual data subsets for each respective graph
+## Saves these subsets so Shiny App doesn't have to do it later
 
-setwd("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3BG2/app2")
-
-#load packages
+#Install/ load packages
 library(baseballr)
 library(tidyverse)
 library(ggplot2)
 library(ggrepel)
 library(stringr)
 
-#import hitting graphics
+#import hitting data
 Bat <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3BG2/app2/FinalBatAll1.csv")
 Bat <- Bat %>% filter(Year != 2018)
   #write.csv(Bat, "FinalBatAll1920.csv", row.names = FALSE)
