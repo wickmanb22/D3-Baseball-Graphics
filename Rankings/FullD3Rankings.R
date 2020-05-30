@@ -1,46 +1,37 @@
 ---------------
-#title: 'D3 RPI Rankings'
+#title: '2020 D3 RPI Rankings'
 ---------------
-setwd("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings")
 
 #Load packages
 library(pacman)
 p_load(dplyr, plyr, baseballr, tidyverse, rvest, stringr, readxl, formattable)
 
-# Compiling D3 Database ---------------------------------------------------
+# Compiling 2020 D3 Teams Database---------------------------------------------------
 
 #Load excel document with list of D3 teams
-#Some names have been edited right on the spreadsheet
 D3 <- read_excel("D3.xlsx")
 D3$school = str_squish(D3$school)
 
 
-#replace strings to correctly pull teamIDs
+#replace reoccuring strings to correctly pull teamIDs 
 D3$school = str_replace(D3$school,"North Carolina","N.C.")
 D3$school = str_replace(D3$school,"Tenn.","TN")
 D3$school = str_replace(D3$school,"Birmingham-Southern","Birmingham-So.")
 D3$school = str_replace(D3$school,"Christopher","Chris.")
 D3$school = str_replace(D3$school,"Eastern Mennonite","East. Mennonite")
 D3$school = str_replace(D3$school,"Emory and Henry","Emory & Henry")
-#D3$school = str_replace(D3$school,"Va.","VA")
 D3$school = str_replace(D3$school,"Southern Virginia","Southern Va.")
 D3$school = str_replace(D3$school,"Md.","MD")
-#D3$school = str_replace(D3$school,"Pa.","PA")
 D3$school = str_replace(D3$school,"Washington and Lee","Wash. & Lee")
 D3$school = str_replace(D3$school,"Virginia Wesleyan","Va. Wesleyan")
 
-#Take parantheses out of name, should not be needed anymore
-#D3$school[23] = "Marymount"
-#D3$school[24] = "Maryville"
-#D3$school[43] = "York"
-
-#For Loop to create List of D3 Schools
+#Loop to create List of D3 Schools using baseballr
 D3list <- list()
 for (i in 1:nrow(D3)) {
   D3list[[i]] = baseballr::school_id_lu(D3$school[i]) %>% filter(year==2020) %>% slice(1)
 }
 
-#Check Schools are correct on D3List, adjust if not
+#Check Schools are correct on D3List, adjust if necessary
 D3list[[43]] = school_id_lu("York") %>% filter(year==2020) %>% slice(2)
 D3list[[24]] = school_id_lu("Maryville") %>% filter(year==2020) %>% slice(2)
 D3list[[38]] = school_id_lu("Mary") %>% filter(year==2020) %>% slice(13)
@@ -74,24 +65,22 @@ D3list[[372]] = school_id_lu("Pacific") %>% filter(year==2020) %>% slice(5)
 D3list[[377]] = school_id_lu("Southwestern") %>% filter(year==2020) %>% slice(2)
 D3list[[381]] = school_id_lu("Trinity") %>% filter(year==2020) %>% slice(2)
 
-#place all ids into one data.frame
+#gather all IDs from list into dataframe
 #Make sure the D3 and D3IDs have same number of rows or some teams have been left out
 D3IDs = plyr::ldply(D3list,data.frame)
 
-#CSV file of SchoolIDS
-write.csv(D3IDs,"IDs2020D3.csv", row.names = F)
+# Addings Wins, Losses, and Ties to D3IDs ----------------------------------------
 
-
-# Recording Wins, Losses, and Ties ----------------------------------------
-#Bring the csv fil
-IDs2020D3 <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/IDs2020D3.csv")
-
-#Loop for scraping schedules
+#Loop for scraping schedules using baseballr
 D3WList <- list()
-for (i in 1:nrow(IDs2020D3)) {
-  D3WList[[i]] =  get_ncaa_schedule_info(IDs2020D3$school_id[i], 2020)%>% select(result) %>% filter(result!="NA") %>% group_by(result) %>% dplyr::summarise(number=dplyr::n())}
+for (i in 1:nrow(D3IDs)) {
+  D3WList[[i]] =  get_ncaa_schedule_info(D3IDs$school_id[i], 2020)%>% 
+    select(result) %>% 
+    filter(result!="NA") %>% 
+    group_by(result) %>% 
+    dplyr::summarise(number=dplyr::n())}
 
-#Move list to dataframe
+#Gather all schedules from list to dataframe
 D3WL <- D3WList %>% reduce(full_join, by = "result")
 
 #Transpose dataframe
@@ -109,23 +98,17 @@ D3WL <- D3WL[,c(2,1,3)]
 D3WL[is.na(D3WL)] <- 0
 
 #Send all school names to a vector
-D3school <- IDs2020D3$school
+D3school <- D3IDs$school
 
 #Add this vector as a column
 school <- c(D3school)
 D3WLschool <- data.frame(school, D3WL)
 rownames(D3WLschool) <- NULL
 
-#Merge with D3IDs df
+#Merge with D3IDs by school names
 D3Records <- merge(IDs2020D3, D3WLschool, by = 'school')
 
-#Write to CSV for next step
-write.csv(D3Records,"D3Records.csv", row.names = F)
-
-# Strength of Schedule Compilation ----------------------------------------
-
-#Bring in OD3Records with WLT
-D3Records <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3Records.csv")
+# Strength of Schedule Calculation ----------------------------------------
 
 #Loop for scraping schedules
 D3List <- list()
@@ -136,11 +119,11 @@ for (i in 1:nrow(D3Records)) {
     dplyr::summarise(number=dplyr::n()) %>% 
     mutate(school_id = D3Records$school_id[i])}
 
-#Move back to dataframe ASAP
+#Move back to dataframe
 D3SOS1 <- do.call("rbind", D3List)
 
-#Clean dataframe, same commands as before
-#Check dataframe before continuing to make no more weird names have been added
+#Some schedule contain location of the game
+#Use str_remove to get rid of these locations for following steps
 D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@Port Charlotte, FL") 
 D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@Fort Myers, FL")
 D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@Auburndale, FL") 
@@ -250,17 +233,21 @@ D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@Tuscon, Ariz.")
 D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@Norothboro, MA") 
 D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@Flemington, NJ")
 D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@Norothboro, MA") 
+
+#Now that all locations are removed, get rid of "@" sign
 D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@") 
 D3SOS1$opponent = str_squish(D3SOS1$opponent)
 
-#Merge with ODACIDs by opponent
+#OProfile is the same as D3Records, although 'school' column renamed to opponent
+#Merge with OProfile by opponent
 #OProfile <- read_excel("OpponentProfile.xlsx")
+#D3OWLT = D3 Opponent Win Loss Ties
 D3OWLT <- merge(OProfile, D3SOS1, by = 'opponent') %>% arrange(desc(school_id))
 
 #Make new column that shows nWinPCT so we can add it up and divide by number of games played
 D3OWLT1 <- D3OWLT %>% mutate(NWinPCT = WinPCT * number)
 
-#Group by of all group bys and prepare to merge
+#Group by and prepare to merge
 D3OppSOS <- D3OWLT1 %>% group_by(school_id) %>%
   summarise(TN = sum(number), TNWP = sum (NWinPCT)) %>%
   transmute(school_id, SOS = TNWP/TN) 
@@ -271,17 +258,13 @@ D3SOS <- merge(D3Records, D3OppSOS, by = 'school_id')
 #Rename school column for next step
 names(D3SOS)[names(D3SOS)=="school"] <- "opponent"
 
-#Delete first column too
-write.csv(D3SOS,"D3SOS.csv")
-
-
 # Opponents Strength of Schedule ------------------------------------------
 
 #Merge with D3SOS to keep building on it
 D3OWLTSOS <- merge(OProfile, D3SOS1, by = 'opponent')
 
-#Scrape Schedule of ODAC Opponents
-setTimeLimit(0)
+#Scrape Schedule of Opponents
+#This is not efficient, school schedule scraped each time they come up
 D3OList <- list()
 for (i in 1:nrow(D3OWLTSOS)) {
   D3OList[[i]] =  get_ncaa_schedule_info(D3OWLTSOS$opponent_id[i], 2020)%>% 
@@ -407,46 +390,43 @@ D3SOS1$opponent <- str_remove(D3SOS1$opponent, "@")
 D3SOS1$opponent = str_squish(D3SOS1$opponent)
 
 ##Merge with D3WLT
-OProfile <- read_excel("OpponentProfile.xlsx")
 D3OWLT1 <- merge(OProfile, D3SOS1, by = 'opponent')
 
 #Make new column that shows nW and n(GP)
 D3OWLT2 <- D3OWLT1 %>% mutate(NWinPCT = WinPCT * number)
-
 
 #Group by and prepare to merge
 D3OSOS <- D3OWLT2 %>% group_by(school_id) %>%
   summarise(TN = sum(number), TNWP = sum (NWinPCT)) %>%
   transmute(school_id, OSOS = TNWP/TN)
 
-#Merge with ODACIDs
-D3SOS <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3SOS.csv")
+#Merge with D3IDs
+#Start making RPI calculations
 D3Rankings <- merge(D3SOS, D3OSOS, by = 'school_id')
 D3Rankings = D3Rankings %>% mutate(GP=W+L+T, WinPCT = W/GP, RPI = .25 * WinPCT+ .5 * SOS+.25 * OSOS) %>% 
   filter(GP >= 10) %>%
   arrange(desc(RPI))
 
-#Add state and enrollment dataframe
+#Add dataframe including more information about schools
 StatesEnrollment <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/StatesEnrollment.csv")
+
+#Only if these columns exist, they arise from write.csv without including row.names = FALSE
 D3Rankings$X.1 <- NULL
 D3Rankings$X <- NULL
-D3Rankings <- left_join(D3Rankings, StatesEnrollment, by = 'opponent')
 
-#Create new SOS+WinPCT variable
-#Delete first column too
-write.csv(D3Rankings,"D3Rankings.csv")
+#Add more information about the schools
+#I know that I've used this name before, however I originally wrote this code in seperate .R files
+#Combining these documents to show man overview of the process
+D3Rankings <- left_join(D3Rankings, StatesEnrollment, by = 'opponent')
 
 
 # Clean RPI Table for Presentation --------------------------------------------
 
-#Read in D3Rankings CSV
-D3Rankings <- read.csv("~/R/Baseball Analysis/Intro Baseball Analysis/FullD3Rankings/D3Rankings.csv")
-
-#Drop columns
+#Select desired columns
 D3RPI <- D3Rankings %>% select(opponent, conference, W, L, T, SOS, RPI, State) %>% arrange(desc(RPI))
 
-#Add missing teams before ranking
 #Add Missing teams (school name, conference, W, L, T, SOS, RPI)
+#the College of Saint Elizabeth's (CSE) baseball program is new and not yet updated in baseballr (or I couldn't find it at least)
 CSE <- c("St. Elizabeth","CSAC",2,10,0,0.5247741,0.43090084, "NJ")
 D3RPI <- rbind(D3RPI,  CSE)
 
@@ -458,12 +438,7 @@ D3RPI$Rank = 1:nrow(D3RPI)
 D3RPI <- D3RPI %>% arrange(desc(SOS))
 D3RPI$SoS = 1:nrow(D3RPI)
 
-#Combine W,L,T, makes it very hard to sort
-#D3RPI <- unite(D3RPI, "Record", c("W","L","T"), sep = "-", remove = TRUE)
-#D3RPI2 <- D3RPI$Record %>% str_remove("-0")
-#D3RPI$Record = D3RPI2
-
-#Reorder Columns to Satisfaction, get rid of others
+#Reorder Columns to desired format and get rid of others
 D3RPI <- D3RPI[,c(9,1,8,2,3,4,5,7,10)] %>% arrange(desc(RPI))
 x <- 100/as.numeric(D3RPI$RPI[1])
 D3RPI <- D3RPI %>% mutate(RPI = as.numeric(RPI) *as.numeric(x))
@@ -517,11 +492,6 @@ D3RPI$conference <- str_replace(D3RPI$conference,"CAC", "Capital Athletic Confer
 names(D3RPI)[names(D3RPI)=="conference"] <- "Conference"
 D3RPI <- D3RPI %>% arrange(desc(Rating)) 
 
-#Format the table nicely
-#D3RPI1<- formattable(D3RPI, list(
-#  SoS = color_tile("red", "green", 0.2)
-#))
-#D3RPI1
-
-write.csv(D3RPI, "D3RPITABLEC.csv")
+#Create csv file of rankings
+write.csv(D3RPI, "D3RPITABLEC.csv", row.names = FALSE)
 
