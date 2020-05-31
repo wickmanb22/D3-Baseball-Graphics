@@ -1,13 +1,11 @@
-#
 # This is a Shiny web application. You can run the application by clicking
 # the 'Run App' button above.
 #
 # Find out more about building applications with Shiny here:
 #
 #    http://shiny.rstudio.com/
-#
 
-#Load packages
+#Install/ load packages
     library(dplyr)
     library(ggplot2)
     library(shiny)
@@ -21,23 +19,25 @@
     library(usmap)
     library(mosaic)
     library(data.table)
-    
+
+#Helps with rendering pictures
 pdf(NULL)
 
 #Import data
     #RPI Rankings
-        D3RPITABLE <- read.csv("D3RPITABLEC.csv")
-        D3RPITABLE$X <- NULL
+        #D3RPITABLE <- Load in the table from D3Rankings.R
+    #Delete first row if necessary
+        #D3RPITABLE$X <- NULL
 
     #Batting stats for table/ visualizations
-        BatTable <- read.csv("FinalBatAll1920.csv")
+        #BatTable <- Load in hitting statistics from player stats folder
         BatTable <- rename(BatTable, "GP-GS" = "GP.GS")
         BatTable <- rename(BatTable, "2B" = "X2B")
         BatTable <- rename(BatTable, "3B" = "X3B")
         BatTable$SLG <- signif(BatTable$SLG, digits = 4)
 
     #Pitching stats for stat tables
-        PitchTable <- read.csv("FinalPitchAll1920.csv")
+        #PitchTable <- Load in pitching statistics from player stats folder
         PitchTable <- rename(PitchTable, "W-L" = "WL")
 
     #Import data for visualizations
@@ -58,16 +58,7 @@ pdf(NULL)
         #Team Pitcher Performance
             tpperf <- read.csv("tpperf.csv")
     
-    #Import data for maps
-        #Specific Program Locator
-            #map3 <- read.csv("map3.csv")
-
-    #Make custom icon for map
-        #baseballIcon <- makeIcon(
-            #iconUrl = "baseballmarker.png",
-            #iconWidth = 25, iconHeight = 25)
-
-# Define UI for application that shows the interactive table
+# Define the user interface
 ui <- 
 
 navbarPage("D3 Baseball Graphics", 
@@ -560,10 +551,11 @@ navbarPage("D3 Baseball Graphics",
                                    )
                           )
                ))           
-# Define server logic required to show the table
 
+# Define server logic required to show the output elements
 server <- function(input, output) {
     
+    #D3RPI interactive table
     output$D3RPI <- DT::renderDataTable(DT::datatable({
         D3RPI <- D3RPITABLE
         if (input$conf != "All") {
@@ -573,6 +565,7 @@ server <- function(input, output) {
         D3RPI
     }))
     
+    #Batting statistics interactive table
     output$BatTable1 <- DT::renderDataTable(DT::datatable({
         BatTable1 <- BatTable
             BatTable <- BatTable[BatTable$Year == input$year,]
@@ -586,7 +579,7 @@ server <- function(input, output) {
             BatTable <- BatTable %>% filter(AB >= input$num)}
         BatTable}))
   
-    
+    #pitching statistics interactive table
     output$PitchTable1 <- DT::renderDataTable(DT::datatable({
         PitchTable1 <- PitchTable
             PitchTable <- PitchTable[PitchTable$Year == input$year1,]
@@ -599,6 +592,7 @@ server <- function(input, output) {
             PitchTable
     }))
     
+    #Individual Hitting Performance plot
     output$ihperf1 <- renderPlot({
         input$action2
         isolate(
@@ -615,10 +609,12 @@ server <- function(input, output) {
             geom_point(data = filter(ihperf %>% filter(Year == input$year2), AA == input$aafind), size = 3, shape = 16, color = "#FF3399"))
     })
     
+    #Individual hitting performance interactive plot
     output$ihperf1info <- renderPrint({nearPoints(ihperf %>% filter(Year == input$year2, AB >= input$min1), input$clickr4, threshold = 10, maxpoints = 5,
                                                   addDist = FALSE)
       })
-    
+   
+    #Team Hitting Performance plot
     output$thperf1 <- renderPlot({
         input$action3
         isolate(
@@ -631,10 +627,12 @@ server <- function(input, output) {
             geom_point(data = filter(thperf %>% filter(Year == input$year3), conference == input$conffind1), size = 3, shape = 16, color = "#FFCC00"))
     })
     
+   #Team Hitting Performance interactive plot
     output$thperf1info <- renderPrint({nearPoints(thperf %>% filter(Year == input$year3), input$clickr1, threshold = 10, maxpoints = 5,
                  addDist = FALSE)
     })
     
+    #Individual hitting productivity plot
     output$ihprod1 <- renderPlot({
       input$action4
       isolate(
@@ -649,9 +647,11 @@ server <- function(input, output) {
             geom_point(data = filter(ihprod %>% filter(Year == input$year4), AA == input$aafind1), size = 3, shape = 16, color = "#FF3399"))
     })
     
+    #Individual hitting productivity interactive plot
     output$ihprod1info <- renderPrint({nearPoints(ihprod %>% filter(Year == input$year4), input$clickr5, threshold = 10, maxpoints = 5,
                                                   addDist = FALSE)})
-      
+   
+   #Team hitting productivity plot
     output$thprod1 <-renderPlot({
         input$action5
         isolate(
@@ -662,10 +662,12 @@ server <- function(input, output) {
         ggtitle("Team Productivity"))
     })
 
+    #Team hitting productivity interactive plot
     output$thprod1info <- renderPrint({nearPoints(thprod, input$clickr2, threshold = 10, maxpoints = 5,
                                                   addDist = FALSE)
     })
     
+    #Individual pitching performance plot
     output$ipperf1 <- renderPlot ({
         input$action6
         isolate(
@@ -679,9 +681,11 @@ server <- function(input, output) {
             ggtitle("Scatterplot of ERA and WHIP values for pitchers with 10+ IP"))
     })
     
+    #Individual pitching performance interactive plot
     output$ipperf1info <- renderPrint({nearPoints(ipperf %>% filter(Year == input$year6, IP >= input$min2), input$clickr6, threshold = 10, maxpoints = 5,
                                                   addDist = FALSE)})
     
+    #Team pitching performance plot
     output$tpperf1 <- renderPlot({
         input$action7
         isolate(
@@ -692,12 +696,13 @@ server <- function(input, output) {
             geom_point(data = filter(tpperf %>% filter(Year == input$year7), conference == input$conffind5), size = 3, shape = 16, color = "#FFCC00") +
             ggtitle("Scatterplot of team ERA and WHIP values for teams with 5+ GP"))
     })
-    
+   
+    #Team pitching performance interactive plot
     output$tpperf1info <- renderPrint({nearPoints(tpperf %>% filter(Year == input$year7), input$clickr3, threshold = 10, maxpoints = 5,
                                                   addDist = FALSE)
     })
     
-    #SCM = StatCreatorMachine for batters
+    #SCM = StatCreatorMachine for hitters
     BatTable1 <- reactive({BatTable %>% filter(Year == input$year8, AB >= input$num2)})
     
     SCM <- reactive({BatTable %>% filter(Year == input$year8, AB >= input$num2) %>%
@@ -721,7 +726,8 @@ server <- function(input, output) {
                     input$stat1,
                     " out of all qualified hitters in ", input$year8, ". This is more than approximately ", 
                     batnumber(), " of the other ", batternumber(), " hitters who met the minimum at bat requirement.", sep = ""))})
-    #SCM for pitchers
+   
+    #Stat Creator Machine for pitchers
     PitchTable1 <- reactive({PitchTable %>% filter(Year == input$year9, IP >= input$num3)})
     
     SCM1 <- reactive({PitchTable %>% filter(Year == input$year9, IP >= input$num3) %>%
@@ -746,7 +752,7 @@ server <- function(input, output) {
                     " out of all qualfied pitchers in ", input$year9, ". This is more than approximately ", 
                     pitchnumber(), " of the other ", pitchernumber(), " pitchers who met the minimum innings pitched requirement.", sep = ""))})
 }    
-    # Run the application 
+    # Run the application! 
 shinyApp(ui = ui, server = server)
 
 
