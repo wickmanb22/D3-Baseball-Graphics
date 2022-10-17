@@ -26,7 +26,6 @@ D3Bat2$OBPct <- round(D3Bat2$OBPct, digits = 3)
 D3Bat2$BA <- as.numeric(D3Bat2$BA)
 D3Bat2$BA <- round(D3Bat2$BA, digits = 3)
 
-
 #Clean up long conference names
 D3Bat2$conference <- str_replace(D3Bat2$conference,"Michigan Intercol. Ath. Assn.", "MIAA")
 

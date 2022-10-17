@@ -110,7 +110,6 @@ colnames(FipPitch21)[colnames(FipPitch21) == "conference"] <- "Conference"
 colnames(FipPitch21)[colnames(FipPitch21) == "year"] <- "Year"
 colnames(FipPitch21)[colnames(FipPitch21) == "Yr"] <- "Class"
 
-
 FinalPitchAll1 <- FipPitch21 %>% arrange(desc(IP))
 
-#This is the pitching stats table as seen on the applicationo
+#This is the pitching stats table as seen on the application

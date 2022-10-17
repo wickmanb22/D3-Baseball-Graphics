@@ -3,8 +3,11 @@
 ---------------
 
 #Load packages
-library(pacman)
-p_load(dplyr, plyr, baseballr, tidyverse, rvest, stringr, readxl, formattable)
+#library(pacman)
+#p_load(dplyr, plyr, baseballr, tidyverse, rvest, stringr, readxl, formattable)
+  
+library(readxl)
+library(baseballr)
 
 # Compiling 2020 D3 Teams Database---------------------------------------------------
 
